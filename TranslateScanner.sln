@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateScanner", "TranslateScanner\TranslateScanner.csproj", "{ADE586FF-8ED6-4D15-93A4-5D22E7B55F7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADE586FF-8ED6-4D15-93A4-5D22E7B55F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE586FF-8ED6-4D15-93A4-5D22E7B55F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE586FF-8ED6-4D15-93A4-5D22E7B55F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE586FF-8ED6-4D15-93A4-5D22E7B55F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EC77667-D824-4D5B-A40E-A86B42E68275}
+	EndGlobalSection
+EndGlobal
