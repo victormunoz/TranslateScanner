@@ -31,17 +31,19 @@ namespace TranslateScanner
             while (!f.EndOfStream)
             {
                 var linia = f.ReadLine();
-                if (linia.Contains("__(\""))
+                while (linia.Contains("__(\""))
                 {
-                    var txt = linia.Substring(linia.IndexOf("__(\"") + "__(\"".Length);
-                    txt = txt.Substring(0, txt.IndexOf("\""));
+                    linia = linia.Substring(linia.IndexOf("__(\"") + "__(\"".Length);
+                    var txt = linia.Substring(0, linia.IndexOf("\""));
+                    linia = linia.Substring(linia.IndexOf("\""));
                     texts.Add(txt);
                     algun = true;
                 }
-                else if (linia.Contains("__('"))
+                while (linia.Contains("__('"))
                 {
-                    var txt = linia.Substring(linia.IndexOf("__('") + "__('".Length);
-                    txt = txt.Substring(0, txt.IndexOf("'"));
+                    linia = linia.Substring(linia.IndexOf("__('") + "__('".Length);
+                    var txt = linia.Substring(0, linia.IndexOf("'"));
+                    linia = linia.Substring(linia.IndexOf("'"));
                     texts.Add(txt);
                     algun = true;
                 }
